@@ -83,6 +83,28 @@
     <button onclick="alert('Welcome!')">
         Click Me
     </button>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAwrnMCSdYpo0GYc472l6Ddj7fk7zSYPRo",
+    authDomain: "my-first-website-a0d49.firebaseapp.com",
+    projectId: "my-first-website-a0d49",
+    storageBucket: "my-first-website-a0d49.firebasestorage.app",
+    messagingSenderId: "4539416000",
+    appId: "1:4539416000:web:21e9b5243e67de8b115c25",
+    measurementId: "G-1JGV39HDRH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
